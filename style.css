@@ -1,0 +1,96 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: normal;
+    color: rgb(190, 190, 190);
+    box-sizing: border-box;
+}
+body { background-color: #000000ee; }
+h1 {
+    margin-left: 11vw;
+    font-weight: bold;
+    font-size: 7vh;
+    text-transform: uppercase;
+    color: rgb(245, 95, 55);
+    text-shadow: 0px 5px #000;
+}
+h2 {
+    color: rgb(245, 95, 55);
+    margin: 5vh;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+p { margin-bottom: 4vh; text-align: justify; }
+#par1 { margin-top: 9vh; }
+.main {
+    position: relative;
+    width: auto;
+    height: 60vh;
+    margin: 20vh 15vw 0;
+    padding: 2rem;
+    background: radial-gradient(#2e2e2e, #000000);
+    border-radius: 15px;
+    box-shadow: 0px 15px 25px -15px rgb(245, 95, 55);
+}
+.avatar {
+    width: 250px;
+    position: absolute;
+    z-index: 1;
+    top: 15vh;
+    left: 13vw;
+    padding: 10px;
+    background: radial-gradient(#2e2e2e, #000000);
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px -5px rgb(245, 95, 55);
+}
+img { width: 100%; border-radius: 10px; }
+
+/***** small devices starts here *****/
+
+@media (max-width: 767px) {
+    body {
+        text-align: center;
+        margin-top: 0;
+    }
+    h1 {
+        font-size: 95%;
+        /* text-align: center; */
+        margin-top: 15vh;
+        margin-right: 15vw;
+        margin-bottom: 1vh;
+        text-shadow: 0px 3px #000;
+    }
+    .main {
+        margin-top: 30vh;
+        margin-left: 5vw;
+        width: 90%;
+        height: 100vh;
+    }
+    .avatar {
+        margin-left: 10vw;
+        width: 55%;
+    }
+    #par1 {
+        margin-top: 3vh;
+    }
+    #par2 {
+        display: none;
+    }
+  
+}
+
+@media (max-width: 568px) {
+    .main {
+        height: 97vh;
+    }
+    #par1 {
+        margin-top: 3vh;
+    }
+    #par2 {
+        display: none;
+    }
+    #par3 {
+        display: none;
+    }
+}
